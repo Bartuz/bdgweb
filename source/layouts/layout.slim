@@ -5,5 +5,7 @@ html lang="pl"
     title BdgWeb Meetup
     = stylesheet_link_tag "all.css"
 body
+  = partial 'header'
   == yield
+  = partial 'footer'
 
