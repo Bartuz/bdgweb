@@ -1,4 +1,91 @@
 @charset "utf-8"
 @import "base"
-div
-  color: $light-yellow
+*::selection
+  background: $purple
+  color: white
+body
+  font-family: $main-font
+  @media screen and (max-width: 455px)
+    font-size: 15px
+header
+  .logo
+    padding-left: 0
+    text-align: left
+    @media screen and (max-width: 630px)
+      text-align: center
+    img
+      width: 160px
+      height: auto
+  .title
+    text-align: center
+    h1 
+      color: $dark-yellow
+      font-size: 3em
+      font-weight: bold
+      margin-bottom: 15px
+      @media screen and (max-width: 455px)
+        margin-top: 8px
+    h2
+      color: $grey
+      font-size: 1.2em
+      letter-spacing: .27em
+      font-weight: 300
+
+section.main, footer
+  padding-top: 20px
+  background-color: $light-yellow
+  ul 
+    margin-top: 0px
+    list-style: none
+    padding-left: 0
+    li
+      color: $light-brown
+      font-size: 1.1em
+      line-height: 150%
+      margin-bottom: 20px
+      strong
+        font-size: 1.2em 
+        letter-spacing: .12em
+        margin: 0 .15em
+      a 
+        text-decoration: none
+        color: inherit
+        strong
+          margin-left: .1em
+      &:nth-child(3)
+        strong
+          margin-left: 0
+  h2, h3, h4
+    margin-top: 5px
+    color: $dark-yellow
+    font-weight: 400
+    & .about
+      margin-top: 30px
+  h2
+    font-size: 2em
+  h3
+    font-size: 1.7em
+  h4
+    margin-bottom: 7px
+    font-size: 1.3em
+
+footer
+  padding-top: 0
+  ul.social-media
+    li
+      display: inline-block
+      a
+        display: inline-block
+        font-size: 5em
+        text-align: center
+        border-radius: 10px
+        width: 100%
+        height: 90px
+        line-height: 90px
+        -webkit-transition: .5s
+        transition: .5s
+        span
+          display: none
+        &:hover
+          color: white
+          background-color: $dark-yellow
